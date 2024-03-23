@@ -21,5 +21,5 @@ jobs:
         poetry install --with dev,lint --no-root
     - name: Analysing the code with lint
       run: |
-        flake8 
-        black .
+        poetry run flake8 
+        poetry run black .
