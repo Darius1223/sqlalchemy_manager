@@ -19,6 +19,6 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install poetry
         poetry install --with dev,lint --no-root
-    - name: Analysing the code with lint
+    - name: Run test [pytest]
       run: |
         poetry run pytest
