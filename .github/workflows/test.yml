@@ -1,4 +1,4 @@
-name: Lint
+name: Test
 
 on: [push]
 
@@ -21,5 +21,4 @@ jobs:
         poetry install --with dev,lint --no-root
     - name: Analysing the code with lint
       run: |
-        poetry run flake8 
-        poetry run black .
+        poetry run pytest
