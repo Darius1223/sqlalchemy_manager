@@ -3,7 +3,7 @@ from typing import Type, TypeVar, Generic, Any
 from sqlalchemy import select, Result, CursorResult
 from sqlalchemy.orm import sessionmaker
 
-from core.exceptions import (
+from sqlalchemy_manager.exceptions import (
     FieldNotFoundError,
     RecordDoesNotExistsError,
     TooManyValuesError,

@@ -9,5 +9,5 @@ tasks:
     cmds:
       - black .
       - flake8
-      - mypy core
+      - mypy sqlalchemy_manager
     silent: false

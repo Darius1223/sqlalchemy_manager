@@ -2,7 +2,7 @@ import pytest
 from sqlalchemy.exc import IntegrityError
 from typing_extensions import TypedDict
 
-from core.manager import Manager, TooManyValuesError
+from sqlalchemy_manager.manager import Manager, TooManyValuesError
 from tests.config import session_maker, engine
 from tests.models import User, BaseModel
 
