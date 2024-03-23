@@ -14,6 +14,7 @@
     <img src="https://img.shields.io/pypi/pyversions/sqlalchemy-django-manager.svg?color=%2334D058" alt="Supported Python versions">
 </a>
 </p>
+
 ---
 
 ## Quick start
