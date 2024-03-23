@@ -1,0 +1,9 @@
+.pytest_cache
+
+.env
+
+.idea
+
+# database
+db
+

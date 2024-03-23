@@ -1,0 +1,1 @@
+## SqlAlchemy Manager [by django style]
