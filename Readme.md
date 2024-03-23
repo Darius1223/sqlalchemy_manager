@@ -7,11 +7,11 @@
 <a href="https://coverage-badge.samuelcolvin.workers.dev/redirect/tiangolo/fastapi" target="_blank">
     <img src="https://coverage-badge.samuelcolvin.workers.dev/tiangolo/fastapi.svg" alt="Coverage">
 </a>
-<a href="https://pypi.org/project/fastapi" target="_blank">
-    <img src="https://img.shields.io/pypi/v/fastapi?color=%2334D058&label=pypi%20package" alt="Package version">
+<a href="https://pypi.org/project/sqlalchemy-django-manager/" target="_blank">
+    <img src="https://img.shields.io/pypi/v/sqlalchemy-django-manager?color=%2334D058&label=pypi%20package" alt="Package version">
 </a>
-<a href="https://pypi.org/project/fastapi" target="_blank">
-    <img src="https://img.shields.io/pypi/pyversions/fastapi.svg?color=%2334D058" alt="Supported Python versions">
+<a href="https://pypi.org/project/sqlalchemy-django-manager/" target="_blank">
+    <img src="https://img.shields.io/pypi/pyversions/sqlalchemy-django-manager.svg?color=%2334D058" alt="Supported Python versions">
 </a>
 </p>
 ---

@@ -1,5 +1,8 @@
 [tool.poetry]
-name = "sqlalchemy-manager"
+name = "sqlalchemy-django-manager"
+packages = [
+    { include = "sqlalchemy_manager" },
+]
 version = "0.1.0"
 description = ""
 authors = ["Darius1223 <dar.290199@mail.ru>"]
