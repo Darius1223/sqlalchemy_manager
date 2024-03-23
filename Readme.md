@@ -4,6 +4,25 @@
 
 ## Quick start
 
+Simple database structure
+```python
+Base = declarative_base()
+
+
+class BaseModel(Base):
+    __abstract__ = True
+
+    id = Column(Integer, primary_key=True)
+
+
+class User(BaseModel):
+    __tablename__ = "users"
+
+    email = Column(String, unique=True, index=True)
+    first_name = Column(String)
+
+```
+
 First of all, you need to create a `Manager` object
 
 ```python
@@ -22,22 +41,10 @@ engine = create_engine(
 session_maker = sessionmaker(engine)
 manager = Manager(session_maker=session_maker)
 
-Base = declarative_base()
+```
 
-
-class BaseModel(Base):
-    __abstract__ = True
-
-    id = Column(Integer, primary_key=True)
-
-
-class User(BaseModel):
-    __tablename__ = "users"
-
-    email = Column(String, unique=True, index=True)
-    first_name = Column(String)
-
-
+Basic usage
+```python
 user = manager(User).create(email="test@test.ru")
-
+user = manager(User).get(email="test_2@test.ru")
 ```
