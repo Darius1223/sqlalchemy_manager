@@ -21,9 +21,6 @@ jobs:
         poetry install --with dev,lint --no-root
     - name: Run test [pytest]
       run: |
-        poetry run pytest --cov --cov-report xml:coverage/coverage.xml
-    - name: Store coverage files
-      uses: actions/upload-artifact@v3
-      with:
-        name: coverage
-        path: coverage
+        poetry run coverage run -m pytest
+    - name: Upload Coverage to Codecov
+      uses: codecov/codecov-action@v2
